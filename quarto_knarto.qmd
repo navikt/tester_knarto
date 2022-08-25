@@ -1,0 +1,63 @@
+---
+title: Eirik tester quarto
+author: Eirik Gallefoss
+jupyter:
+  jupytext:
+    formats: 'ipynb,py:percent,qmd'
+    text_representation:
+      extension: .qmd
+      format_name: quarto
+      format_version: '1.0'
+      jupytext_version: 1.14.1
+  kernelspec:
+    display_name: Python 3.10.5 ('py310')
+    language: python
+    name: python3
+format:
+  html:
+    theme: dark
+    code-fold: true
+---
+
+```{python}
+#| echo: false
+import datetime as dt
+from IPython.display import display, Markdown
+import plotly.express as px
+```
+
+## Kode
+
+```{python}
+dt.datetime.now()
+```
+
+## Plotly
+
+Markdown funker.
+
+```{python}
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = list(range(10))
+y = [x**3 for x in x]
+fig = plt.figure()
+plt.plot(x,y)
+plt.grid(True)
+plt.show()
+```
+
+```{python}
+px.bar([1,2,3,4,5]).show()
+```
+
+## Bilder
+
+Her er en figur.
+
+![Feilmelding](images/programlimit.png)
+
+Og en annen figur.
+
+![Treig spørring](images/treg_sp%C3%B8rring.png)
