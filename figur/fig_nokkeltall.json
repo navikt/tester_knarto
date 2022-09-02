@@ -1,0 +1,72 @@
+{
+  "data": [
+    {
+      "domain": { "column": 1, "row": 1 },
+      "mode": "number",
+      "number": { "valueformat": ",d" },
+      "title": { "text": "Utbetalte vedtak" },
+      "value": 1623854,
+      "type": "indicator"
+    },
+    {
+      "domain": { "column": 0, "row": 2 },
+      "mode": "number",
+      "number": { "valueformat": ",d" },
+      "title": { "text": "Automatisk utbetalt vedtak" },
+      "value": 1225227,
+      "type": "indicator"
+    },
+    {
+      "domain": { "column": 2, "row": 2 },
+      "mode": "number",
+      "number": { "valueformat": ",d" },
+      "title": { "text": "Utbetalte vedtak vurdert av saksbehandler" },
+      "value": 398627,
+      "type": "indicator"
+    }
+  ],
+  "layout": {
+    "template": {
+      "data": { "scatter": [{ "type": "scatter" }] },
+      "layout": {
+        "images": [
+          {
+            "name": "logo",
+            "sizex": 0.18,
+            "sizey": 0.18,
+            "source": "https://www.nav.no/_/asset/no.nav.navno:1585254115/img/navno/logo.svg",
+            "x": 1.1,
+            "xanchor": "right",
+            "xref": "paper",
+            "y": 1.13,
+            "yanchor": "bottom",
+            "yref": "paper"
+          }
+        ],
+        "annotations": [
+          {
+            "align": "center",
+            "font": { "color": "rgb(116, 101, 130)", "size": 13 },
+            "name": "disclaimer",
+            "showarrow": false,
+            "text": "NB! Dette plottet er ikke offisiell statistikk og m\u00e5 ikke deles utenfor NAV.",
+            "x": 0.5,
+            "xref": "paper",
+            "y": 1.1,
+            "yref": "paper"
+          }
+        ],
+        "font": {
+          "color": "#3E3832",
+          "family": "Source Sans Pro Semibold",
+          "size": 14
+        },
+        "width": 1024
+      }
+    },
+    "grid": { "rows": 3, "columns": 3, "pattern": "independent" },
+    "autosize": true,
+    "separators": ", ",
+    "width": 1024
+  }
+}
